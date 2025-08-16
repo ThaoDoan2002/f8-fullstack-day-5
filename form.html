@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/form/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+  </head>
+  <body>
+    <form action="" class="form">
+      <h1 class="form-heading">Register</h1>
+      <div class="form-group">
+        <label for="name" class="form-label">Display name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Display name..."
+          class="form-input"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email..."
+          class="form-input"
+        />
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone number</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Phone number..."
+          class="form-input"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password..."
+          class="form-input"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password_confirmation" class="form-label">
+          Password confirmation
+        </label>
+        <input
+          type="password"
+          id="password_confirmation"
+          placeholder="Password confirmation..."
+          class="form-input"
+        />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Gender</label>
+        <input type="radio" name="gender" id="male" checked />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" />
+        <label for="other">Other</label>
+      </div>
+      <div class="form-group">
+        <label for="dob" class="form-label">Date of Birth</label>
+        <input type="date" id="dob" />
+      </div>
+      <div class="form-group">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" id="address" placeholder="Adress..." class="form-input"/>
+      </div>
+      <div class="form-group">
+        <label for="avatar" class="form-label">Avatar</label>
+        <label for="avatar" class="form-avatar">
+          <img
+            width="200px"
+            src="./img/avatar.jpg"
+            alt="avatar"
+            class="avatar-img"
+          />
+        </label>
+        <input type="file" id="avatar" hidden />
+      </div>
+      <div class="form-group">
+        <label for="" class="form-label">Communication Preferences</label>
+        <div class="form-vertical">
+          <label
+            ><input type="checkbox" name="communication" />
+            Subscribe to Newsletter
+          </label>
+          <label>
+            <input type="checkbox" name="communication" />
+            Receive Promotional Emails
+          </label>
+          <label
+            ><input type="checkbox" name="communication" />Get Product Updates
+          </label>
+        </div>
+      </div>
+      <div class="form-group form-footer">
+        <button class="form-btn">Register</button>
+      </div>
+    </form>
+  </body>
+</html>
